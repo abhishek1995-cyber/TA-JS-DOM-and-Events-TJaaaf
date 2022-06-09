@@ -81,7 +81,7 @@ body {
   margin-right: 20px;
 }
 
-.box {
+.box, .box2{
   margin: 5px;
   background-color: #444;
   background-size: contain;
