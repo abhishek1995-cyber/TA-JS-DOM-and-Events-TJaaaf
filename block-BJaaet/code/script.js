@@ -1,9 +1,12 @@
 let form = document.querySelector('form');
 let display = document.querySelector(".display")
 let userInfo = "";
+let inputmain = document.querySelector("#movieList");
 
 
 function createui(data){
+    inputmain.value= "";
+    
     let ul = document.createElement('ul');
     ul.classList.add("flex");
 
@@ -30,8 +33,10 @@ function handleSubmit(event){
     let movie = event.target.elements.movie.value
     userInfo = movie;
 
+      
     createui(userInfo)
     
 
 }
 form.addEventListener("submit",handleSubmit);
+
